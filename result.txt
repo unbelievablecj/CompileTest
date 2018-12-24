@@ -1,0 +1,281 @@
+���	����ջ		����
+1	[]	����
+2	[{]	����
+3	[{, decls]	decls->��
+4	[{, decls]	����
+5	[{, decls, int]	type->basic
+6	[{, decls, type]	����
+7	[{, decls, type, i]	����
+8	[{, decls, type, i, ;]	decl->type id ;
+9	[{, decls, decl]	decls->decls decl 
+10	[{, decls]	����
+11	[{, decls, int]	type->basic
+12	[{, decls, type]	����
+13	[{, decls, type, j]	����
+14	[{, decls, type, j, ;]	decl->type id ;
+15	[{, decls, decl]	decls->decls decl 
+16	[{, decls]	����
+17	[{, decls, float]	type->basic
+18	[{, decls, type]	����
+19	[{, decls, type, v]	����
+20	[{, decls, type, v, ;]	decl->type id ;
+21	[{, decls, decl]	decls->decls decl 
+22	[{, decls]	����
+23	[{, decls, float]	type->basic
+24	[{, decls, type]	����
+25	[{, decls, type, x]	����
+26	[{, decls, type, x, ;]	decl->type id ;
+27	[{, decls, decl]	decls->decls decl 
+28	[{, decls]	����
+29	[{, decls, float]	type->basic
+30	[{, decls, type]	����
+31	[{, decls, type, []	����
+32	[{, decls, type, [, 100]	����
+33	[{, decls, type, [, 100, ]]	type->type [ num ]
+34	[{, decls, type]	����
+35	[{, decls, type, a]	����
+36	[{, decls, type, a, ;]	decl->type id ;
+37	[{, decls, decl]	decls->decls decl 
+38	[{, decls]	stmts>��
+39	[{, decls, stmts]	����
+40	[{, decls, stmts, while]	����
+41	[{, decls, stmts, while, (]	����
+42	[{, decls, stmts, while, (, true]	factor->true
+43	[{, decls, stmts, while, (, factor]	term->unary
+44	[{, decls, stmts, while, (, term]	expr->term
+45	[{, decls, stmts, while, (, expr]	rel->expr
+46	[{, decls, stmts, while, (, rel]	equality->rel
+47	[{, decls, stmts, while, (, equality]	join->equality
+48	[{, decls, stmts, while, (, join]	bool->join
+49	[{, decls, stmts, while, (, bool]	����
+50	[{, decls, stmts, while, (, bool, )]	����
+51	[{, decls, stmts, while, (, bool, ), {]	����
+52	[{, decls, stmts, while, (, bool, ), {, decls]	decls->��
+53	[{, decls, stmts, while, (, bool, ), {, decls]	stmts>��
+54	[{, decls, stmts, while, (, bool, ), {, decls, stmts]	����
+55	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do]	����
+56	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, i]	loc->id
+57	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc]	����
+58	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =]	����
+59	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, i]	loc->id
+60	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc]	factor->loc
+61	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, factor]	term->unary
+62	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, term]	expr->term
+63	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, expr]	����
+64	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, expr, +]	����
+65	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, expr, +, 1]	factor->num
+66	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, expr, +, factor]	term->unary
+67	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, expr, +, term]	expr->expr + term
+68	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, expr]	rel->expr
+69	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, rel]	equality->rel
+70	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, equality]	join->equality
+71	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, join]	bool->join
+72	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, bool]	����
+73	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, bool, ;]	stmt->loc = bool
+74	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt]	����
+75	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while]	����
+76	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (]	����
+77	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, a]	loc->id
+78	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc]	����
+79	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, []	����
+80	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, i]	loc->id
+81	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, loc]	factor->loc
+82	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, factor]	term->unary
+83	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, term]	expr->term
+84	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, expr]	rel->expr
+85	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, rel]	equality->rel
+86	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, equality]	join->equality
+87	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, join]	bool->join
+88	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, bool]	����
+89	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc, [, bool, ]]	loc->loc [ bool ]
+90	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, loc]	factor->loc
+91	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, factor]	term->unary
+92	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, term]	expr->term
+93	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, expr]	����
+94	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, expr, <]	����
+95	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, expr, <, v]	loc->id
+96	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, expr, <, loc]	factor->loc
+97	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, expr, <, factor]	term->unary
+98	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, expr, <, term]	expr->term
+99	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, expr, <, expr]	rel->expr < expr
+100	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, rel]	equality->rel
+101	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, equality]	join->equality
+102	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, join]	bool->join
+103	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, bool]	����
+104	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, bool, )]	����
+105	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, while, (, bool, ), ;]	stmt->do stmt while ( bool ) ;
+106	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, stmt]	stmts->stmts stmt
+107	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do]	����
+108	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do]	����
+109	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, j]	loc->id
+110	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc]	����
+111	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =]	����
+112	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, j]	loc->id
+113	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, loc]	factor->loc
+114	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, factor]	term->unary
+115	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, term]	expr->term
+116	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, expr]	����
+117	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, expr, -]	����
+118	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, expr, -, 1]	factor->num
+119	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, expr, -, factor]	term->unary
+120	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, expr, -, term]	expr->expr - term
+121	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, expr]	rel->expr
+122	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, rel]	equality->rel
+123	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, equality]	join->equality
+124	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, join]	bool->join
+125	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, bool]	����
+126	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, =, bool, ;]	stmt->loc = bool
+127	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt]	����
+128	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while]	����
+129	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (]	����
+130	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, a]	loc->id
+131	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc]	����
+132	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, []	����
+133	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, j]	loc->id
+134	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, loc]	factor->loc
+135	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, factor]	term->unary
+136	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, term]	expr->term
+137	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, expr]	rel->expr
+138	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, rel]	equality->rel
+139	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, equality]	join->equality
+140	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, join]	bool->join
+141	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, bool]	����
+142	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc, [, bool, ]]	loc->loc [ bool ]
+143	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, loc]	factor->loc
+144	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, factor]	term->unary
+145	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, term]	expr->term
+146	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, expr]	����
+147	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, expr, >]	����
+148	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, expr, >, v]	loc->id
+149	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, expr, >, loc]	factor->loc
+150	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, expr, >, factor]	term->unary
+151	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, expr, >, term]	expr->term
+152	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, expr, >, expr]	rel->expr > expr
+153	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, rel]	equality->rel
+154	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, equality]	join->equality
+155	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, join]	bool->join
+156	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, bool]	����
+157	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, bool, )]	����
+158	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, loc, stmt, while, (, bool, ), ;]	stmt->do stmt while ( bool ) ;
+159	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, stmt]	stmts->stmts stmt
+160	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do]	����
+161	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if]	����
+162	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (]	����
+163	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, i]	loc->id
+164	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, loc]	factor->loc
+165	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, factor]	term->unary
+166	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, term]	expr->term
+167	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, expr]	����
+168	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, expr, >=]	����
+169	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, expr, >=, j]	loc->id
+170	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, expr, >=, loc]	factor->loc
+171	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, expr, >=, factor]	term->unary
+172	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, expr, >=, term]	expr->term
+173	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, expr, >=, expr]	rel->expr >= expr
+174	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, rel]	equality->rel
+175	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, equality]	join->equality
+176	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, join]	bool->join
+177	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, bool]	����
+178	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, bool, )]	����
+179	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, bool, ), break]	����
+180	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, bool, ), break, ;]	stmt->break ;
+181	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, bool, ), stmt]	stmts->stmts stmt
+182	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, do, if, (, bool, )]	stmt->if ( bool ) stmt
+183	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, stmt]	stmts->stmts stmt
+184	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do]	����
+185	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, x]	loc->id
+186	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc]	����
+187	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =]	����
+188	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, a]	loc->id
+189	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc]	����
+190	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, []	����
+191	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, i]	loc->id
+192	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, loc]	factor->loc
+193	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, factor]	term->unary
+194	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, term]	expr->term
+195	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, expr]	rel->expr
+196	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, rel]	equality->rel
+197	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, equality]	join->equality
+198	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, join]	bool->join
+199	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, bool]	����
+200	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc, [, bool, ]]	loc->loc [ bool ]
+201	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, loc]	factor->loc
+202	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, factor]	term->unary
+203	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, term]	expr->term
+204	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, expr]	rel->expr
+205	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, rel]	equality->rel
+206	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, equality]	join->equality
+207	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, join]	bool->join
+208	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, bool]	����
+209	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, =, bool, ;]	stmt->loc = bool
+210	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt]	����
+211	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a]	����
+212	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, []	����
+213	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, i]	loc->id
+214	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, loc]	factor->loc
+215	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, factor]	term->unary
+216	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, term]	expr->term
+217	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, expr]	rel->expr
+218	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, rel]	equality->rel
+219	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, equality]	join->equality
+220	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, join]	bool->join
+221	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, bool]	����
+222	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, a, [, bool, ]]	loc->loc [ bool ]
+223	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc]	����
+224	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =]	����
+225	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, a]	loc->id
+226	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc]	����
+227	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, []	����
+228	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, j]	loc->id
+229	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, loc]	factor->loc
+230	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, factor]	term->unary
+231	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, term]	expr->term
+232	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, expr]	rel->expr
+233	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, rel]	equality->rel
+234	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, equality]	join->equality
+235	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, join]	bool->join
+236	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, bool]	����
+237	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc, [, bool, ]]	loc->loc [ bool ]
+238	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, loc]	factor->loc
+239	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, factor]	term->unary
+240	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, term]	expr->term
+241	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, expr]	rel->expr
+242	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, rel]	equality->rel
+243	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, equality]	join->equality
+244	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, join]	bool->join
+245	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, bool]	����
+246	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, =, bool, ;]	stmt->loc = bool
+247	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt]	����
+248	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a]	����
+249	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, []	����
+250	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, j]	loc->id
+251	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, loc]	factor->loc
+252	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, factor]	term->unary
+253	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, term]	expr->term
+254	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, expr]	rel->expr
+255	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, rel]	equality->rel
+256	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, equality]	join->equality
+257	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, join]	bool->join
+258	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, bool]	����
+259	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, a, [, bool, ]]	loc->loc [ bool ]
+260	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc]	����
+261	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =]	����
+262	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, x]	loc->id
+263	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, loc]	factor->loc
+264	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, factor]	term->unary
+265	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, term]	expr->term
+266	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, expr]	rel->expr
+267	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, rel]	equality->rel
+268	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, equality]	join->equality
+269	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, join]	bool->join
+270	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, bool]	����
+271	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, =, bool, ;]	stmt->loc = bool
+272	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, stmt]	����
+273	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt, loc, stmt, }]	block->{ decls stmts }
+274	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, block]	stmt->block
+275	[{, decls, stmts, while, (, bool, ), {, decls, stmts, do, loc, stmt, loc, stmt]	stmt->while ( bool ) stmt
+276	[{, decls, stmts, while, (, bool, ), {, decls, stmts, stmt]	stmts->stmts stmt
+277	[{, decls, stmts, while, (, bool, ), {, decls, stmts]	����
+278	[{, decls, stmts, while, (, bool, ), {, decls, stmts, }]	block->{ decls stmts }
+279	[{, decls, stmts, while, (, bool, ), block]	program->block
+280	[{, decls, stmts, while, (, bool, ), program]	����
