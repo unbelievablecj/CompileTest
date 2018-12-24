@@ -11,7 +11,7 @@ public class Main {
 		FileWriter fw=new FileWriter(out);
 		File in=new File("test.cpp");
 		FileReader fr=new FileReader(in);
-		fw.write("±àºÅ	·ûºÅÕ»		¶¯×÷\n");
+		fw.write("ç¼–å·	ç¬¦å·æ ˆ		åŠ¨ä½œ\n");
 		Lexer lex=new Lexer(fr);
 		Parser parse=new Parser(lex,fw);
 		parse.program();
